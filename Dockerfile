@@ -3,7 +3,7 @@ RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1 && apt ins
 && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
 ARG NGROK_TOKEN
-ENV NGROK_TOKEN=${NGROK_TOKEN}
+ENV NGROK_TOKEN=${2fm4JzrF1Lix07TPK8zCCoJ9RMT_5pAvxYZNZuG4pMjPa7X1S}
 RUN apt install ssh wget unzip -y > /dev/null 2>&1
 RUN wget -O ngrok.zip https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip > /dev/null 2>&1
 RUN unzip ngrok.zip
